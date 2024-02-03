@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "749373108400",
+    "project_id": "education-app-a7b04",
+    "storage_bucket": "education-app-a7b04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749373108400:android:5d05b658d442c935d54b75",
+        "android_client_info": {
+          "package_name": "pro.ehouman.educationapp.educationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpdm6NPzjJO8aCmP26oOdu8ONggMoMpV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
