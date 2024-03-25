@@ -1,9 +1,11 @@
+import 'package:educationapp/core/common/app/providers/user_provider.dart';
 import 'package:educationapp/core/res/colours.dart';
 import 'package:educationapp/core/res/fonts.dart';
 import 'package:educationapp/core/services/injection_container.dart';
 import 'package:educationapp/core/services/router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'firebase_options.dart';
   
 void main() async {
@@ -26,17 +28,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
-      title: 'Education App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(accentColor: Colours.primaryColour),
-        useMaterial3: true,
-        fontFamily: Fonts.poppins,
-        appBarTheme: const AppBarTheme(
-          color: Colors.transparent,
+    return ChangeNotifierProvider(
+      create: (_) => UserProvider(),
+      child: MaterialApp(
+        title: 'Education App',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch(accentColor: Colours.primaryColour),
+          useMaterial3: true,
+          fontFamily: Fonts.poppins,
+          appBarTheme: const AppBarTheme(
+            color: Colors.transparent,
+          ),
         ),
+        onGenerateRoute: generateRoute,
       ),
-      onGenerateRoute: generateRoute,
     );
   }
 }
