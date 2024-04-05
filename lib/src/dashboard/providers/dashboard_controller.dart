@@ -18,13 +18,40 @@ class DashboardController extends ChangeNotifier {
     ),
       child: const PersistenceView(),
     ),
+
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const Placeholder(),
+        ),
+      ),
+      child: const PersistenceView(),
+    ),
+
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const Placeholder(),
+        ),
+      ),
+      child: const PersistenceView(),
+    ),
+
+    ChangeNotifierProvider(
+      create: (_) => TabNavigator(
+        TabItem(
+          child: const Placeholder(),
+        ),
+      ),
+      child: const PersistenceView(),
+    ),
   ];
 
   List<Widget> get screens => _screen;
 
   int _curretIndex = 3;
 
-  int get getCurrentIndex => _curretIndex;
+  int get currentIndex => _curretIndex;
 
 
   void changeIndex(int index){
