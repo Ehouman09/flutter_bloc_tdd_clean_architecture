@@ -6,13 +6,13 @@ import 'package:educationapp/core/res/media_res.dart';
 import 'package:educationapp/core/utils/core_utilis.dart';
 import 'package:educationapp/src/auth/data/models/user_model.dart';
 import 'package:educationapp/src/auth/presentation/bloc/auth_bloc.dart';
+import 'package:educationapp/src/auth/presentation/views/forgot_password_screen.dart';
 import 'package:educationapp/src/auth/presentation/views/sign_up_screen.dart';
 import 'package:educationapp/src/auth/presentation/widgets/sign_in_form.dart';
 import 'package:educationapp/src/dashboard/presentation/views/dashboard_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:educationapp/src/auth/presentation/views/forgot_password_screen.dart';
 
 class SignInScreen extends StatefulWidget {
 
@@ -84,7 +84,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
 
-                            Text(
+                            const Text(
                               'Sign in to your account',
                               style: TextStyle(
                                 fontSize: 14,
@@ -97,10 +97,10 @@ class _SignInScreenState extends State<SignInScreen> {
                                 onPressed: (){
                                   Navigator.pushReplacementNamed(
                                       context,
-                                      SignUpScreen.routeName
+                                      SignUpScreen.routeName,
                                   );
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Register account ?',
                                 ),
                               ),
@@ -126,8 +126,8 @@ class _SignInScreenState extends State<SignInScreen> {
                                 Navigator.pushNamed(context, ForgotPasswordScreen.routeName);
                               },
                               child: const Text(
-                                  'Forgot password'
-                              )
+                                  'Forgot password',
+                              ),
                           ),
                         ),
 
@@ -151,8 +151,8 @@ class _SignInScreenState extends State<SignInScreen> {
 
 
                               }
-                            }
-                        )
+                            },
+                        ),
 
 
                       ],

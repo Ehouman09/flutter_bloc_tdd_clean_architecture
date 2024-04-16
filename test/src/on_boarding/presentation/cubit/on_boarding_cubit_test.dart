@@ -63,7 +63,7 @@ void main() {
       expect: () => const[
 
          CachingFirstTimer(),
-         UserCached()
+         UserCached(),
 
       ],
       verify: (_){
@@ -87,7 +87,7 @@ void main() {
       act: (cubit) => cubit.cacheFirstTimer(),
       expect: () =>  [
         const CachingFirstTimer(),
-        OnBoardingError(tFailure.errorMessage)
+        OnBoardingError(tFailure.errorMessage),
 
       ],
       verify: (_){
@@ -122,7 +122,7 @@ void main() {
     verify:(_) {
       verify(() => checkIfUserIsFirstTimer()).called(1);
       verifyNoMoreInteractions(checkIfUserIsFirstTimer);
-    }
+    },
   );
 
 
@@ -145,7 +145,7 @@ void main() {
       verify:(_) {
         verify(() => checkIfUserIsFirstTimer()).called(1);
         verifyNoMoreInteractions(checkIfUserIsFirstTimer);
-      }
+      },
   );
 
 

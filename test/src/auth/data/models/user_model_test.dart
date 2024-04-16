@@ -12,7 +12,7 @@ import '../../../../fixtures/fixture_reader.dart';
 void main() {
 
 
-  final tLocalUserModel = LocalUserModel.empty();
+  const tLocalUserModel = LocalUserModel.empty();
   
   test('Should be a sub class of [LocalUser] entity',
           () => expect(tLocalUserModel, isA<LocalUser>(),),

@@ -1,7 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 class TabNavigator extends ChangeNotifier{
@@ -45,8 +44,6 @@ class TabNavigator extends ChangeNotifier{
 
   void popUntil(TabItem page){
 
-    if(page == null) return popToRoot();
-
     if(_navigationStack.length > 1){
       _navigationStack.removeRange(1, _navigationStack.indexOf(page) + 1);
       notifyListeners();
@@ -67,7 +64,7 @@ class TabNavigatorProvider extends InheritedNotifier<TabNavigator> {
   const TabNavigatorProvider({
     required this.navigator,
     required super.child,
-    super.key
+    super.key,
 }) : super(notifier: navigator);
 
   final TabNavigator navigator;

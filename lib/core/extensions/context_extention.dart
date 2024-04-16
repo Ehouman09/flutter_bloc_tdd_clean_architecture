@@ -2,7 +2,6 @@
 import 'package:educationapp/core/common/app/providers/tab_navigator.dart';
 import 'package:educationapp/core/common/app/providers/user_provider.dart';
 import 'package:educationapp/src/auth/domain/entities/user.dart';
-import 'package:educationapp/src/dashboard/providers/dashboard_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

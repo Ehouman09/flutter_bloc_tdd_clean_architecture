@@ -67,7 +67,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         onDotClicked: (index){
                           pageController.animateToPage(
                               index,
-                              duration: Duration(milliseconds: 500),
+                              duration: const Duration(milliseconds: 500),
                               curve: Curves.easeInOut,
                           );
                         },
@@ -76,16 +76,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           dotWidth: 10,
                           spacing: 40,
                           activeDotColor: Colours.primaryColour,
-                          dotColor: Colors.white
+                          dotColor: Colors.white,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               );
 
-            }
-        )
+            },
+        ),
     );
 
   }

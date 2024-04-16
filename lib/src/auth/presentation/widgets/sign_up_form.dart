@@ -90,7 +90,7 @@ class _SignUpFormState extends State<SignUpForm> {
                   icon: Icon(
                     obscurePassword ? IconlyLight.show : IconlyLight.hide,
                     color: Colors.grey,
-                  )
+                  ),
               ),
               overrideValidator: true,
               validator: (value){
@@ -105,7 +105,7 @@ class _SignUpFormState extends State<SignUpForm> {
 
 
           ],
-        )
+        ),
     );
   }
 }

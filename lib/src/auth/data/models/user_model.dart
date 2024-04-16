@@ -4,7 +4,7 @@ import 'package:educationapp/src/auth/domain/entities/user.dart';
 class LocalUserModel extends LocalUser {
 
 
-  LocalUserModel({
+  const LocalUserModel({
       required super.uid,
       required super.email,
       required super.points,
@@ -17,7 +17,7 @@ class LocalUserModel extends LocalUser {
       super.bio,
       });
 
-   LocalUserModel.empty() : this(
+   const LocalUserModel.empty() : this(
       uid: '',
       email: '',
      fullName: '',

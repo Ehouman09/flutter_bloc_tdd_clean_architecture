@@ -27,7 +27,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown
+      DeviceOrientation.portraitDown,
     ]);
 
     super.initState();
@@ -69,7 +69,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             primaryColour : Colors.grey,
                           ),
                         label: 'Home',
-                        backgroundColor: Colors.white
+                        backgroundColor: Colors.white,
                       ),
 
 
@@ -81,7 +81,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             primaryColour : Colors.grey,
                           ),
                           label: 'Materials',
-                          backgroundColor: Colors.white
+                          backgroundColor: Colors.white,
                       ),
 
                       BottomNavigationBarItem(
@@ -92,7 +92,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             primaryColour : Colors.grey,
                           ),
                           label: 'Chat',
-                          backgroundColor: Colors.white
+                          backgroundColor: Colors.white,
                       ),
 
 
@@ -104,7 +104,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             primaryColour : Colors.grey,
                           ),
                           label: 'Profile',
-                          backgroundColor: Colors.white
+                          backgroundColor: Colors.white,
                       ),
 
 
@@ -112,7 +112,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ],
                   ),
                 );
-              }
+              },
           );
 
         },

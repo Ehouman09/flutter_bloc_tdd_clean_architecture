@@ -15,7 +15,7 @@ class CoreUtils {
             message,
             style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold,
             ),
           ),
         behavior: SnackBarBehavior.floating,

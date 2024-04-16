@@ -55,7 +55,7 @@ class _SignInFormState extends State<SignInForm> {
                   icon: Icon(
                       obscurePassword ? IconlyLight.show : IconlyLight.hide,
                       color: Colors.grey,
-                  )
+                  ),
               ),
 
             ),
@@ -64,7 +64,7 @@ class _SignInFormState extends State<SignInForm> {
 
 
           ],
-        )
+        ),
     );
   }
 }

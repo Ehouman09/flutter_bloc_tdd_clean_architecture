@@ -27,17 +27,17 @@ class OnBoardingBody extends StatelessWidget {
         SizedBox(height: context.height * .03,),
 
         Padding(
-            padding: EdgeInsets.all(20).copyWith(bottom: 0),
+            padding: const EdgeInsets.all(20).copyWith(bottom: 0),
             child: Column(
               children: [
 
                 Text(
                   pageContent.title,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     fontFamily: Fonts.aeonik,
-                    fontSize: 40
+                    fontSize: 40,
                   ),
                 ),
 
@@ -46,8 +46,8 @@ class OnBoardingBody extends StatelessWidget {
                 Text(
                   pageContent.description,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 14
+                  style: const TextStyle(
+                      fontSize: 14,
                   ),
                 ),
 
@@ -57,25 +57,25 @@ class OnBoardingBody extends StatelessWidget {
                     onPressed: () async {
 
                       //TODO
-                      context.read<OnBoardingCubit>().cacheFirstTimer();
+                      await context.read<OnBoardingCubit>().cacheFirstTimer();
                     },
-                    child: Text(
-                      "Get Started",
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 50,
+                      vertical: 17,
+                    ),
+                    backgroundColor:  Colours.primaryColour,
+                    foregroundColor: Colors.white,
+                  ),
+                    child: const Text(
+                      'Get Started',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontFamily: Fonts.aeonik,
                       ),
                     ),
-                  style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 50,
-                      vertical: 17
-                    ),
-                    backgroundColor:  Colours.primaryColour,
-                    foregroundColor: Colors.white
-                  ),
-                )
+                ),
 
               ],
             ),
