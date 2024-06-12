@@ -19,7 +19,7 @@ class ProfileView extends StatelessWidget {
           image: MediaRes.profileGradientBackground,
           child: ListView(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            children: const [
+            children: [
 
             ],
           )
