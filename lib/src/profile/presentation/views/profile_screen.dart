@@ -1,5 +1,6 @@
 import 'package:educationapp/core/common/widgets/gradient_background.dart';
 import 'package:educationapp/core/res/media_res.dart';
+import 'package:educationapp/src/profile/presentation/refactors/profile_header.dart';
 import 'package:educationapp/src/profile/presentation/widgets/profile_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,9 @@ class ProfileView extends StatelessWidget {
           image: MediaRes.profileGradientBackground,
           child: ListView(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            children: [
+            children: const [
+
+               ProfileHeader()
 
             ],
           )
